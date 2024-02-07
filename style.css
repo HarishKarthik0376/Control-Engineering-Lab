@@ -1609,3 +1609,69 @@ body
     left:50%;
     margin-bottom: 10px;
 }
+
+
+/*MatLab*/
+.MatLabContent{
+    position: fixed;
+    top:50%;
+    left:30%;
+   
+}
+.MatLabContent>form > a{
+        text-decoration: none;
+        animation: colorchanger 8s ease-in infinite;
+        font-weight: bolder;
+}
+
+
+#Submit_Matlab{
+    visibility: hidden;
+    padding: 12px;
+    border-radius: 12px;
+    color:white;
+    background-color: red;
+    border: none;
+    box-shadow: 2px 2px white;
+}
+
+#Submit_Matlab:hover{
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+.SimulationDone_Matlab{
+    padding:15px;
+    border-radius: 12px;
+    border: none;
+    background-color:green;
+    box-shadow: 2px 2px  black;
+
+}
+
+#FileUpload_MatLab{
+    visibility: hidden;
+    padding: 12px;
+    border-radius: 12px;
+    color:white;
+    background-color: black;
+    border: none;
+    box-shadow: 2px 2px white;
+    
+}
+
+@keyframes colorchanger {
+    25%{
+        color:yellow;
+    }    
+    50%{
+        color:blue;
+    }
+    75%{
+        color:red;
+
+    }
+    100%{
+        color:black;
+    }
+}

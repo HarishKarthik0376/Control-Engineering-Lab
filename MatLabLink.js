@@ -35,7 +35,8 @@ const SendFile = async (target) => {
             let data = await res.json();
             console.log(data);
             let content = JSON.parse(data.body)
-            window.location.href = content.redirect_url
+            console.log(content,content.redirect_url)
+            //window.open(content.redirect_url)
         };
     }
 };

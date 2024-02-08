@@ -1,4 +1,4 @@
-
+console.log("Hi");
 let queryparams = new URLSearchParams(window.location.search)
 let rno = queryparams.get("rno");
 let exp = queryparams.get("exp");
@@ -34,7 +34,7 @@ const SendFile = async (target) => {
             let res = await fetchAndReturnRes(jsonObject); // Send as an object
             let data = await res.json();
             console.log(data);
-
+            window.open(`https://harishkarthik0376.github.io/Control-Engineering-Lab/simulation.html?rno=${rno}&exp=${exp}`)
         };
     }
 };

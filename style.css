@@ -5,6 +5,8 @@
     font-family: sans-serif;
 
 }
+
+
 .prelabtest
 {
     display: block;
@@ -1675,3 +1677,751 @@ body
         color:black;
     }
 }
+
+
+/*sim2*/
+#TF1{
+    position: absolute;
+    top: 30%;
+    left:30%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding-top: 40px;
+    background-color: white;
+    align-items: center;
+    width: 40%;
+    height: 20%;
+    border-radius:12px ;
+    transition: 450ms;
+    cursor: pointer;
+}
+#TF1:hover
+{
+    transform: scale(1.15);
+}
+
+#FormForTF1{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    background-color: white;
+    border-radius: 12px;
+    padding:40px;
+    position: absolute;
+    top:20%;
+    left:20%;
+    transform: translate(-13%);
+}
+
+.TheFormTobeSubmitted{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.Half_TheForm{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.Half_TheForm>input{
+    width:50%;
+}
+
+.Half_TheForm>input:focus{
+    outline: none;
+}
+.Half_TheForm > label{
+    font-weight: bolder;
+}
+.TFmouseover{
+   animation: mouseon 1s ease-in ;
+}
+
+.TFmouseout{
+    animation:mouseoff 1s ease-in;
+}
+@keyframes mouseon {
+    from{
+        transform:scale(1);
+    }
+    to{
+        transform: scale(1.15);
+    }
+}
+
+@keyframes mouseoff{
+    from{
+        transform: scale(1.15);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
+#FormForTF1{
+    visibility: hidden;
+}
+.TFFormInp{
+    padding:8px;
+    border-radius: 4px;
+    background-color: lightgrey;
+    border:none;
+
+}
+
+.DivofButt{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+.formbutt{
+    width: 40%;
+    padding:10px;
+    background-color: skyblue;
+    color:white;
+    border-radius: 12px;
+    border:none;
+    cursor: pointer;
+}
+
+.formbutt:hover{
+    box-shadow: 1px 1px black;
+}
+
+
+.BS{
+    animation: BS 0.5s ease-in  1 forwards;
+}
+
+.NoBS{
+    animation: NoBS 0.5s ease-in  1 forwards;
+}
+
+@keyframes BS {
+    from{
+        box-shadow: none;
+    }
+    to{
+        box-shadow: 2px 2px black;
+    }
+    
+}
+
+
+@keyframes NoBS {
+    from{
+        box-shadow:  2px 2px black;
+    }
+    to{
+        box-shadow:none;
+    }
+    
+}
+
+.StaticStuff{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+#HintImg{
+
+    width:50%;
+}
+
+#HintStuff{
+    visibility: hidden;
+}
+#HintImg:hover{
+    transform: scale(1.5);
+}
+
+
+/*exp3*/
+
+
+.Eqintro_3{
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+    width:fit-content;
+    position: absolute;
+    top:30%;
+    left:40%;
+    cursor: pointer;
+
+
+}
+.Eqintro_3:hover{
+    transform:scale(1.15);
+}
+
+.Eqintro_3 > *{
+    width: 100%;
+}
+
+#mcqform {
+    width:fit-content;  
+    height: fit-content;
+    position: absolute;
+    top:23%;
+    left:20%;
+    display: flex;
+    flex-direction: column;
+    gap:90px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    visibility: hidden;
+}
+
+.quest{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+
+.quest >span{
+    border-bottom: 1px solid black;
+}
+.quest > span >label{
+    font-weight: bolder;
+    margin-left: 10px;
+
+}
+
+.questionhead{
+    color:green;
+}
+
+#mcqform_submit{
+    background-color: skyblue;
+    padding: 12px;
+    border-radius: 12px;
+    border:none;
+    color:white;
+}
+
+#mcqform_reset{
+    background-color: red;
+    padding: 12px;
+    border-radius: 12px;
+    border:none;
+    color:white;
+}
+
+.divofbtns{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: center;
+}
+
+#secondform{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: white;
+    border-radius: 12px;
+    height: max-content;
+    width: fit-content;
+    padding: 40px;
+    position: absolute;
+    top:30%;
+    left:40%;
+    visibility: hidden;
+}
+
+#secondform > input{
+    width:100%;
+    padding:15px;
+    background-color: grey;
+    border-radius: 4px;
+    color:white;
+
+}
+
+#secondform > input:focus{
+    outline: none;
+}
+
+.formbtn{
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 12px;
+    border:none;
+    color:white;
+}
+
+
+
+.formstocomplete{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: white;
+    border-radius: 12px;
+    height: max-content;
+    width: fit-content;
+    padding: 40px;
+    position: absolute;
+    top:30%;
+    left:40%;
+    visibility: hidden;
+}
+.formstocomplete>input{
+    width:100%;
+    padding:15px;
+    background-color: grey;
+    border-radius: 4px;
+}
+
+.formstocomplete>input:focus{
+    outline: none;
+}
+
+.formstocomplete > label{
+    color:red;
+    font-weight: bolder;
+}
+
+#finalform{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: white;
+    border-radius: 12px;
+    height: 74vh;
+    width: fit-content;
+    position: absolute;
+    padding:30px;
+    top:23%;
+    left:30%;
+    visibility: hidden;
+    overflow-y: scroll;
+}
+.finalforminput
+{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#mcqform_exp4{
+    width:fit-content;  
+    height: fit-content;
+    position: absolute;
+    top:20%;
+    left:18%;
+    display: flex;
+    flex-direction: column;
+    gap:90px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+}
+.exp4body
+{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(255deg,#FEFEFEff, #FEEFE5ff, #BBF3E6ff, #63ECE4ff, #97C4EDff);
+    background-repeat: no-repeat;
+}
+
+
+#mcqform_exp5{
+    width:fit-content;  
+    height: fit-content;
+    position: absolute;
+    top:10%;
+    left:20%;
+    display: flex;
+    flex-direction: column;
+    gap:90px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    visibility: hidden;
+}
+.Flex_of_Forms_exp4{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    align-items: center;
+    visibility: hidden;
+    margin-top:20px;
+}
+
+
+.formstocomplete_exp4{
+
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    background-color: white;
+    border-radius: 12px;
+    height: max-content;
+    width: fit-content;
+    padding: 40px;
+    align-items: center;
+    box-shadow: 1px 1px black;
+
+}
+
+.imgforform_exp4{
+    width:50%;
+}
+.formstocomplete_exp4>input{
+    width:100%;
+    padding:15px;
+    background-color: grey;
+    border-radius: 4px;
+    color:white;
+}
+
+.formstocomplete_exp4>input:focus{
+    outline: none;
+}
+
+.formstocomplete_exp4 > label{
+    color:red;
+    font-weight: bolder;
+}
+
+
+#five_form1{
+    display: flex;
+    flex-direction: row;
+    gap:12px;
+    align-items: center;
+    visibility: hidden;
+    position: absolute;
+    left:10%;
+    top:20%;
+    background-color: white;
+    border-radius: 12px;
+    padding:50px;
+}
+
+.SelectedEq5{
+    padding:10px;
+    border-radius: 12px;
+
+}
+
+.SelectedEq5 > *{
+    margin: 10px;
+}
+
+
+.secondHalf_form1_5{
+    display: flex;
+    flex-direction: column;
+    gap:55px;
+    align-items: center;
+    padding: 100px;
+    border-radius: 12px;
+}
+
+
+.DivofButt{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+#tabofquests > tbody {
+    position: relative;
+    top:20px;
+}
+
+.tabinp5{
+    background-color: grey;
+    color:white;
+    border-radius: 6px;
+    padding:10px
+}
+
+
+.tabinp5:hover{
+    cursor: pointer;
+}
+
+.TFIntroClass{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    align-items: center;
+    width:fit-content;
+
+}
+
+.TFIntroClass > img{
+    width:40%; 
+    
+}
+
+.TFIntroClass > h3{
+    color:purple;
+}
+
+.simulation_6{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-top: 30px;
+
+    align-items: center;
+}
+
+.Exp6_forms{
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+    width:40%;  
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+}
+
+.Exp6_forms>.quest >input{
+    background-color: grey;
+    color:white;
+    border-radius: 6px;
+    padding:10px;
+    width:100%
+}
+
+.quest{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+}
+
+.PIDClass{
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    align-items: center;
+    width:fit-content;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.PIDController{
+ 
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.OverallContent{
+    display: flex;
+    flex-direction: row;
+    gap:2px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.divofbtns_6{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+
+}
+
+@keyframes change-color {
+    0%{
+        background-color: skyblue;
+    }
+    25%{
+        background-color: red;
+    }
+    50%{
+        background-color: yellow;
+    }
+    75%{
+        background-color: red;
+    }
+    100%{
+        background-color: skyblue;
+    }
+}
+.divofbtns_6>button{
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 12px;
+    border:none;
+    color:white;
+    width: 200px;
+    height: 100px;
+
+}
+
+
+
+.TheMainImageScreenshot{
+    width:80%;
+    height: 80%;
+    position: fixed;
+    left:10%;
+    top:20%;
+    visibility: hidden;
+}
+/*PopUp*/
+
+.expandlesection
+{
+    width: 900px;
+    height: 540px;
+}
+.expandablebox
+{
+    width: 900px;
+    height: 540px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%,10%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+#textaddqns
+{
+    color: green;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+.extraqns
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+.qns
+{
+
+    width: 300px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 35%;
+    transform: translate(-35%,1%);
+}
+.optionsgrp
+{   position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 50%;
+    transform: translate(-55%,10%);
+    margin-top: 2px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.optionadded
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.qnsadded
+{
+    width: 400px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.btnsgrp
+{
+    position: absolute;
+    display: flex;
+    width: 400px;
+    margin-left: 50%;
+    transform: translate(-40%,200%);
+    gap: 10%;
+}
+.buttonpopup
+{
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(173, 216, 230, 0.5);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+#submitqns
+{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.studentsmarks{
+    border-collapse: collapse;
+    overflow-x: scroll;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    top:30%;
+}
+
+
+.studentsmarks >  *{
+    background-color: white;
+    color:green;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+
+    
+}
+
+.tabledata{
+    padding:50px;
+}
+.rowmouseover{
+    animation: scalerow 1s  ease-in 0.4 forwards;
+}
+
+.rowmouseout{
+    animation:scalebackin   1s ease-out -0.4 forwards;
+}
+
+
+
+@keyframes scalerow {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform:scale(1.15)
+    }
+}
+
+
+@keyframes scalebackin{
+    from{
+        transform: scale(1.15);
+    }
+    to{
+        transform:scale(1)
+    }
+}
+

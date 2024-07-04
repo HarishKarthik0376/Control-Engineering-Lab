@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow-y: hidden;">
+    <header>
+        <div class="navbar">
+            <div class="navlogo">
+                <div class="logo">
+                    <img class="srm" src="SRMIST.PNG" alt="logo">
+                </div>
+            </div>
+            <div class="navtitle"><p class="navtext"><b>Control Engineering Lab</b></p></div>
+            <div class="navlogo2">
+                <img style="text-align: right; height:230px; width:170px; position:absolute; top:-9%; right:1%;" class="srm2" src="hello! 1.png" alt="navlogo2">
+            </div>
+        </div>
+</header>
+        <h3 style='padding-top:45px;text-align:center;'>Stability Analysis of a given system Using Root Locus</h3>
+    <main>
+     
+        <div id="EQintro_3" class="Eqintro_3">
+            <h3 style="color:skyblue;text-align:center">Please select the Equation</h3>
+            <img src="Sim3Statics/TF_Sim3.png" style="border-radius:8px" alt="Sim3Eq">    
+        </div>
+     
+        <div>
+            <form  id="mcqform">
+            <div class="quest">
+                <h3  class="questionhead" for="ques1">1.In a root locus plot, the breakaway points</h3>
+                <span><input type="radio" name="ques1" value="Must lie on the root loci"><label> Must lie on the root loci</label></span>
+                <span><input type="radio" name="ques1" value="Must lie outside the root loci"><label> Must lie outside the root loci</label></span>
+            </div>
+            <div class="quest">
+                <h3  class="questionhead" for="ques2">2. How many root locus branches go towards infinity when the number of poles and zeroes is equal?</h3>
+                <span><input type="radio" name="ques2" value="Zero"><label>Zero</label></span>
+                <span><input type="radio" name="ques2" value="One"><label> One</label></span>
+            </div>
+            <div class="quest">
+                <h3   class="questionhead" for="ques3">Which method is considered of time-domain in control techniques?</h3>
+                <span><input type="radio" name="ques3" value="Root Locus"><label>Root Locus</label></span>
+                <span><input type="radio" name="ques3" value="Polar Plot"><label>Polar Plot</label></span>
+            </div>
+            <div class="divofbtns">
+                <button  class="formbtn"id="mcqform_submit">Submit</button>
+                <button    class="formbtn" id="mcqform_reset">Reset</button>
+            </div>
+            </form>
+            
+            <form  class="formstocomplete" id="secondform">
+                <label for="zeroes">Enter the number of Zeroes</label>
+                <input type="text"  class="secondforminp" name="zeroes">
+                <label for="poles">Enter the number of poles</label>
+                <input type="text" class="secondforminp" name="poles">
+                <div class="divofbtns">
+                    <button   class="formbtn"id="form2_submit">Submit</button>
+                    <button   class="formbtn" id="form2_showans">Show Answer</button>
+                    <button   class="formbtn" id="form2_hint">Hint</button>
+                </div>
+            </form>
+            <form  class="formstocomplete" id="thirdform">
+                <label for="P1">Enter P1</label>
+                <input type="text" name="P1" class="ThirdFormInp">
+                <label for="P2">Enter P2</label>
+                <input type="text" name="P2" class="ThirdFormInp">
+                <label for="P3">Enter P3</label>
+                <input type="text" name="P3" class="ThirdFormInp">
+                <div class="divofbtns">
+                    <button   class="formbtn"id="form3_submit">Submit</button>
+                    <button   class="formbtn" id="form3_showans">Show Answer</button>
+                    <button   class="formbtn" id="form3_hint">Hint</button>
+                </div>
+            </form>
+            <form class="formstocomplete" id="finalform">
+                <label for="1">True or False.The location of root locul exists from p1 to p2 and p3 to infinity</label >
+                <input type="text" name='1' class="finalforminput">
+                <label for="2">The angle of asymptotes lies between + or -60 degrees and + or - ___ degrees:</label>
+                <input type="text" name="2"  class="finalforminput">
+                <label for="3">Enter the values for centroid:</label>
+                <input type="text" name="3"  class="finalforminput">
+                <label for="4">Enter the break away point:</label>
+                <input type="text" name="4"  class="finalforminput">
+                <label for="5"> Enter the angle of departure and arrival:</label>
+                <input type="text" name="5"  class="finalforminput">
+                <label for="6">Enter the crossing point on the imaginary axis(+ or - j __):</label>
+                <input type="text" name="6"  class="finalforminput">
+                <label for="7">Enter the limiting value of K for the stability of system:</label>
+                <input type="text" name="7"  class="finalforminput">
+                <div class="divofbtns">
+                    <button class="formbtn" id="finalform_submit">Submit</button>
+                    <button class="formbtn" id="finalform_showans">Show Answer</button>
+                    <button class="formbtn" id="finalform_rootloc">Display Root locus plot</button>
+                    <button class="formbtn" id="finalformhint">Hint</button>
+
+                </div>
+            </form>
+             
+        </div>
+    </main>
+    <script src="sim3.js" type="module"></script>
+</body>

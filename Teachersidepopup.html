@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up Qns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navlogo">
+                <div class="logo">
+                    <img class="srm" src="SRMIST.PNG" alt="logo">
+                </div>
+            </div>
+            <div class="navtitle"><p class="navtext"><b>Control Engineering Lab</b></p></div>
+            <div class="navlogo2">
+                <img style="text-align: right; height:230px; width:170px; position:absolute; top:-9%; right:1%;" class="srm2" src="hello! 1.png" alt="navlogo2">
+            </div>
+        </div>
+</header>
+<div class="expandlesection">
+    <div class="expandablebox" id="expandablebox">
+    <p id="textaddqns">Add Extra Questions</p>
+    <div class="extraqns" id="extraqns">
+        <div class="qns">
+        <span id="serialno" class="serialno">1.</span><span>Enter Question </span><input type="text" class="qnsadded" id="qn1">
+        </div>
+        <div class="optionsgrp">
+        <span class="optionsans">Option1 </span><input type="text" class="optionadded actopts forqn1" id="opt1">
+        <span class="optionsans">Option2 </span><input type="text" class="optionadded actopts forqn1" id="opt2">
+        <span class="optionsans">Option3 </span><input type="text" class="optionadded actopts forqn1" id="opt3">
+        <span class="optionsans">Option4 </span><input type="text" class="optionadded actopts forqn1" id="opt4">
+        <span class="optionsans">Correct Answer  </span><input type="text" class="optionadded correctopts" id="correctopt1">
+    </div>
+    </div>
+    <div class="btnsgrp">
+        <Button class="buttonpopup" id="addqn">ADD Qns</Button>
+        <Button class="buttonpopup" id="submitqns">Submit Qns</Button>
+    </div>
+    </div>
+</div>
+<script src="teachersidepopup.js"></script>
+</body>
+</html>

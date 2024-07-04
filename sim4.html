@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="exp4body">
+    <header>
+        <div class="navbar">
+            <div class="navlogo">
+                <div class="logo">
+                    <img class="srm" src="SRMIST.PNG" alt="logo">
+                </div>
+            </div>
+            <div class="navtitle"><p class="navtext"><b>Control Engineering Lab</b></p></div>
+            <div class="navlogo2">
+                <img style="text-align: right; height:230px; width:170px; position:absolute; top:-9%; right:1%;" class="srm2" src="hello! 1.png" alt="navlogo2">
+            </div>
+        </div>
+</header>
+        <h3 style='padding-top:30px;text-align:center;color:red; '>Stability Analysis of a given system Using Bode Plot</h3>
+    <div>
+        <form  id="mcqform_exp4">
+            <div class="quest">
+                <h3  class="questionhead" for="ques1">What will the system's phase margin be if the estimated phase angle at the gain crossover frequency is -105°?</h3>
+                <span><input type="radio" name="ques1" value="35"><label>35</label></span>
+                <span><input type="radio" name="ques1" value="75"><label>75</label></span>
+            </div>
+            <div class="quest">
+                <h3  class="questionhead" for="ques2">2. Bode plot is applicable for </h3>
+                <span><input type="radio" name="ques2" value="Minimum phase network"><label>Minimum phase network</label></span>
+                <span><input type="radio" name="ques2" value="Non-minimum phase network"><label> Non-minimum phase network</label></span>
+            </div>
+            <div class="quest">
+                <h3   class="questionhead" for="ques3">3. The frequency at which the phase angle is 180 degree is called _________ frequency.</h3>
+                <span><input type="radio" name="ques3" value="Phase crossover"><label>Phase crossover</label></span>
+                <span><input type="radio" name="ques3" value="Critical"><label>Critical</label></span>
+            </div>
+            <div class="divofbtns">
+                <button  class="formbtn"id="mcqform_submit_exp4">Submit</button>
+                <button    class="formbtn" id="mcqform_reset_exp4">Reset</button>
+            </div>
+            </form>
+            <div id="Final_exp4" class="Flex_of_Forms_exp4">
+                <div STYLE="background:white;border-radius:12px;padding:14px;">
+                    <h3 style="color:skyblue;text-align:center">The Transfer Function is </h3>
+                    <img src="Sim4Statics/TF4.png" style="border-radius:8px" alt="Sim3Eq">    
+                </div>
+                <form  class="formstocomplete_exp4" id="exp4secondform">
+                    <h3>Enter the corner frequencies</h3>
+                    <label for="zeroes">Corner frequency 1:</label>
+                    <input type="text"  class="forminp" name="ques1">
+                    <label for="poles">Corner frequency 2:</label>
+                    <input type="text" class="forminp" name="ques2">
+                    <button   class="formbtn form_hint" >Hint</button>
+                  
+                </form>
+                <form  class="formstocomplete_exp4" id="exp4thirdform">
+                    <h3>Enter the slope of each factor</h3>
+                    <label for="zeroes">Slope 1:</label>
+                    <input type="text"  class="forminp" name="ques3">
+                    <label for="poles">Slope 2:</label>
+                    <input type="text" class="forminp" name="ques4">
+                    <label for="poles">Slope 3:</label>
+                    <input type="text" class="forminp" name="ques5">
+                    <button   class="formbtn form_hint" >Hint</button>
+                  
+                </form>
+                <form  class="formstocomplete_exp4" id="exp4fourthform">
+                    <h3>Enter the change in slope between each factor in db/decade</h3>
+                    <label for="zeroes">Slope 1:</label>
+                    <input type="text"  class="forminp" name="ques6">
+                    <label for="poles">Slope 2:</label>
+                    <input type="text" class="forminp" name="ques7">
+                    <button   class="formbtn form_hint">Hint</button>
+                
+                </form>
+                <form  class="formstocomplete_exp4" id="exp4fifthform">
+                    <h3>Enter the gain value for lower and higher corner frequencies as specified in the simulator in db    </h3>
+                    <label for="zeroes"> Gain for lower corner frequency    </label>
+                    <input type="text"  class="forminp" name="ques8">
+                    <label for="poles">Gain for higher corner frequency</label>
+                    <input type="text" class="forminp" name="ques9">
+                    <button   class="formbtn form_hint" >Hint</button>
+                </form>
+                <form  class="formstocomplete_exp4" id="exp4sixthform">
+                    <h3>Enter the gain value for calculated corner frequencies for the given transfer function in db </h3>
+                    <label for="zeroes"> Gain for first corner frequency </label>
+                    <input type="text"  class="forminp" name="ques10">
+                    <label for="poles">Gain for second corner frequency</label>
+                    <input type="text" class="forminp" name="ques11">
+                    <button   class="formbtn form_hint">Hint</button>
+         
+                </form>
+                <form  class="formstocomplete_exp4" id="exp4seventhform">
+                    <h3>Enter the phase angle values for the four corner frequencies in degree </h3>
+                    <label for="zeroes"> Phase angle 1</label>
+                    <input type="text"  class="forminp" name="ques12">
+                    <label for="poles">Phase angle 2</label>
+                    <input type="text" class="forminp" name="ques13">
+                    <label for="zeroes"> Phase angle 3 </label>
+                    <input type="text"  class="forminp" name="ques14">
+                    <label for="poles">Phase angle 4</label>
+                    <input type="text" class="forminp " name="ques15">
+      
+                    <button   class="formbtn form_hint" >Hint</button>
+                </form>
+                <form  class="formstocomplete_exp4" id="exp4eigthform">
+                    <h3>Enter the gain cross over frequency, gain crossover angle and phase margin </h3>
+                    <img class="imgforform_exp4"src="Sim4Statics/SecondtoLastForm.jpeg" alt="Img">
+                    <label for="zeroes"> Gain crossover frequency (ωgc)</label>
+                    <input type="text"  class="forminp" name="ques16">
+                    <label for="poles">Gain crossover angle(ɸgc)</label>
+                    <input type="text" class="forminp" name="ques17">
+                    <label for="zeroes"> Phase Margin(ɣ) </label>
+                    <input type="text"  class="forminp" name="ques18">
+                    <button   class="formbtn form_hint">Hint</button>
+             
+                </form>
+           
+                <form  class="formstocomplete_exp4" id="exp4ninthform">
+                    <h3>Enter the phase cross over frequency and gain margin </h3>
+                    <img class="imgforform_exp4"src="Sim4Statics/FinalForm.jpeg" alt="Img">
+                    <label for="zeroes"> Phase crossover frequency(ωpc)</label>
+                    <input type="text"  class="forminp" name="ques19">
+                    <label for="poles">Gain Margin(GM) </label>
+                    <input type="text" class="forminp" name="ques20">
+                    <label for="zeroes"> System is Stable or Not</label>
+                    <input type="text"  class="forminp" name="ques21">
+                    <button   class="formbtn form_hint">Hint</button>
+            
+                </form>
+               
+                <div class="divofbtns">
+                    <button   class=" mainformbtn formbtn"id="form_submit">Submit</button>
+                    <button   class=" mainformbtn formbtn" id="form_showans">Show Answer</button>
+     
+                </div>
+            </div>
+          
+        
+    </div>
+    <script src="sim4.js" type="module"></script>
+</body>
+</html>

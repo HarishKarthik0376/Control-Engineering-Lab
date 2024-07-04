@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXP-6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="height: 115vh;">
+        <header>
+            <div class="navbar">
+                <div class="navlogo">
+                    <div class="logo">
+                        <img class="srm" src="SRMIST.PNG" alt="logo">
+                    </div>
+                </div>
+                <div class="navtitle"><p class="navtext"><b>Control Engineering Lab</b></p></div>
+                <div class="navlogo2">
+                    <img style="text-align: right; height:230px; width:170px; position:absolute; top:-9%; right:1%;" class="srm2" src="hello! 1.png" alt="navlogo2">
+                </div>
+            </div>
+        <div class="panel">
+            <div class="options">
+                <a class="lik" href="home.html"><button class="but">Home</button></a>
+                <a class="lik" href="exp1.html"><button class="but">Aim</button></a>
+                <a class="lik" href="test.html"><button class="but">Test Portal</button></a>
+                <a class="lik" href="references.html"><button class="but">References</button></a>
+                <a class="lik" href="#"><button class="but">Feedback</button></a>
+                <button id="logout" class="logout">Logout</button>
+            </div>
+        </div>
+    </header>
+    <div class="notificationbox" id="notificationbox"></div>
+    <div class="section">
+        <div class="box">
+            <h3 class="intro"><b>Theory:</b></h3><br>
+            <p class="details1">Tuning of PID controller using Ziegler Nichols method is obtained in this experiment. With help of virtual lab platform, the step response of the open loop system is derived. The delay time and time constants for step response is derived from the obtained step response. The PID controller is tuned to a given system to obtain the time response such as steady state error, transient response of the closed loop system. The students able to analyse the system time domain specifications for the closed loop system by deriving the step response of the system before and after the controller is added to the system. It also provides the knowledge about the increase of poles and zeros to the system when controller is added to the system. It is possible to apply various design techniques for determining parameters of the controller that will meet the transient and steady-state specifications of the closed-loop system.</p>
+            <br>
+            <p class="details1">Step response of the system is obtained with help of general equation of the system. The tangent line is drawn in the step response to calculate the time constant and delay time. Then the value for proportional constant, integral and derivative time constants is calculated with help formulas used in the system. Further based on the above parameters, overall transfer function with PID controller for the selected system is obtained. Finally the overall step response of the system is obtained with help of overall transfer function of the system.</p>
+            <br>
+            <img src="exp6pro.png" style="position:relative;left:15px">
+        </div>
+    
+    </div>
+</body>
+<script type="module" src="logout.js"></script>
+</html>

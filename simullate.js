@@ -159,6 +159,7 @@ submit.addEventListener("click",()=>{
             jsonObject['exp'] = exp;
             jsonObject['rno'] = rno;
             jsonObject['testscore'] = marks;
+            localStorage.setItem("simulation1",marks.toString());
           
             // Retry function
             const retryFetch = async (url, options) => {
@@ -200,7 +201,8 @@ submit.addEventListener("click",()=>{
             }
             setTimeout(() => {
                 {
-                    window.location.href = `https://harishkarthik0376.github.io/Control-Engineering-Lab/postlabtest.html?rno=${rno}&exp=${exp}`;
+                    window.location.href = "postlabtest.html"
+                    // window.location.href = `https://harishkarthik0376.github.io/Control-Engineering-Lab/postlabtest.html?rno=${rno}&exp=${exp}`;
                 }
             }, 5000)
           

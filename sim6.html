@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3 style='padding-top:30px;text-align:center;color:red; '>Design of PID Controller for First and Second order System</h3>
+    </header>
+    <body>
+        <div class="OverallContent">
+        <div id="simulation_6" class="simulation_6">
+            <div id="TF6"  class="TFIntroClass">
+                <h3 id="selecttf">The Transfer Function is </h3>
+                <img src="Sim6Statics/TF.png" alt="TF">
+                <img src="Sim6Statics/StepResponse.png" alt="TF">
+            </div>
+            <form id='form1'  class="Exp6_forms">
+                <h3>Enter Value for delay time and time constant obtained from step response</h3>
+                <div class="quest">
+                <label>Enter delay time (L)</label>
+                    <input type="text" name="ques1" class="form6inp">
+                </div>
+                <div class="quest">
+                    <label>Enter time constant (T)</label>
+                    <input type="text" name="ques2" class="form6inp">
+                </div>
+                <button   class="formbtn form_hint">Hint</button>
+            </form>
+      
+            <form id='form2' class="Exp6_forms">
+                <h3>Enter Value for delay time and time constant obtained from step response</h3>
+                <div class="quest">
+                <label>Enter Kp Values</label>
+                    <input type="text" name="ques3" class="form6inp">
+                </div>
+                <div class="quest">
+                    <label>Enter Ti Values</label>
+                    <input type="text" name="ques4" class="form6inp">
+                </div>
+                <div class="quest">
+                    <label>Enter TD values</label>
+                    <input type="text" name="ques5" class="form6inp">
+                </div>
+                <button   class="formbtn form_hint">Hint</button>
+              
+            </form>
+            <div  class="PIDClass">
+                
+                <h3 id="selecttf">PID Controller Transfer Function</h3>
+                <div class="PIDController">
+                    <img src="Sim6Statics/PIDController.png" alt="TF">
+                    <button class="formbtn" id="PID_RESPONSE">Show PID controller Response</button>
+
+                </div>
+                
+    
+            </div>
+          
+
+        </div>
+        <div class="divofbtns_6">
+            <button   class="formbtn"id="form_submit">Submit</button>
+            <button   class="formbtn" id="form_showAns">Show Answer</button>
+        </div>
+        </div>
+
+        <script src="sim6.js" type="module"></script>
+    </body>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3 style='padding-top:30px;text-align:center;color:red; '>Stability Analysis of a given system Using Polar Plot</h3>
+    </header>
+    <div id="TF1"  class="TFIntroClass">
+        <h3 id="selecttf">Select a Transfer Function</h3>
+       <img src="Sim5Statics/transferfunc.png"  alt="TF1">
+   </div>
+    <form  id="mcqform_exp5">
+        <div class="quest">
+            <h3  class="questionhead" for="ques1">1. The system is called be marginally stable, if</h3>
+            <span><input type="radio" name="ques1" value="<"><label>Phase crossover frequency < Gain crossover frequency</label></span>
+            <span><input type="radio" name="ques1" value="="><label>Phase crossover frequency = Gain crossover frequency</label></span>
+        </div>
+        <div class="quest">
+            <h3  class="questionhead" for="ques2">2.Find phase crossover frequency in rad/sec, if transfer function A(s) B(s) = 1/s(s+1)(s+0.5)</h3>
+            <span><input type="radio" name="ques2" value="0.707"><label>0.707</label></span>
+            <span><input type="radio" name="ques2" value="0.9"><label> 0.9</label></span>
+        </div>
+        <div class="quest">
+            <h3   class="questionhead" for="ques3">3. The frequency at which the phase angle is 180 degree is called _________ frequency.</h3>
+            <span><input type="radio" name="ques3" value="Oscillatory"><label>Oscillatory</label></span>
+            <span><input type="radio" name="ques3" value="Sluggish"><label>Sluggish</label></span>
+        </div>
+        <div class="divofbtns">
+            <button  class="formbtn"id="mcqform_submit_exp5">Submit</button>
+            <button    class="formbtn" id="mcqform_reset_exp5">Reset</button>
+        </div>
+        </form>
+   <form id="five_form1" >
+        <div class="SelectedEq5">
+            <h3 style="color:purple">You have selected!</h3>
+            <img src="Sim5Statics/transferfunc.png" alt="TF1">
+        </div>
+        <div class="secondHalf_form1_5">
+            <table id="tabofquests" name="tabofquests" >
+                <thead>
+                <tr>
+                    <th  style="font-size:1.2rem;" colspan="3">Find the values of Gain and Phase angle for the frequencies given</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Frequency (rad/sec)	</th>
+                    <th>Gain, A(ω) (dB)</th>
+                    <th>Phase Angle, ɸ(ω) (Degree)</th>
+                </tr>
+                <tr>
+                    <td>-5</td>
+                    <td><input type='text' name="ques1" class="tabinp5"></td>
+                    <td><input type='text'   name="ques2" class="tabinp5"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><input type='text'  name="ques3" class="tabinp5"></td>
+                    <td><input type='text'   name="ques4" class="tabinp5"></td>           
+                </tr>
+                <tr>
+                    <td>1.414</td>
+                    <td><input type='text'  name="ques5"class="tabinp5"></td>
+                    <td><input type='text'  name="ques6"class="tabinp5"></td>   
+                </tr>
+                <tr>
+                    <td>1.5</td>
+                    <td><input type='text' name="ques7" class="tabinp5"></td>
+                    <td><input type='text' name="ques8"class="tabinp5"></td>   
+                </tr>
+                <tr>  <td>2</td>
+                    <td><input type='text'  name="ques9"class="tabinp5"></td>
+                    <td><input type='text'  name="ques10"class="tabinp5"></td>   </tr>
+                <tr>
+                    <td>10</td>
+                    <td><input type='text'  name="ques11" class="tabinp5"></td>
+                    <td><input type='text'   name="ques12" class="tabinp5"></td> 
+                </tr>
+                
+                </tbody>
+            </table>
+            <div class="DivofButt">
+                <button id="Submit_5th" class="formbtn">
+                    Submit
+                </button><button id="ShowAns_5th" class="formbtn">
+                    ShowAns
+                </button><button id="Hint_5th"class="formbtn">
+                    Hint
+                    </button>
+            </div>
+        </div>
+
+   </form>
+   <script src='sim5.js' type="module"></script>

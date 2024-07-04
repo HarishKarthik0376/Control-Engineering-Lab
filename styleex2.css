@@ -1,0 +1,368 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+/* modified body*/
+body
+{
+    background: linear-gradient(210deg,#FEFEFEff, #FEEFE5ff, #BBF3E6ff, #63ECE4ff, #97C4EDff);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.navbar{
+    width: 100%;
+    height: 95px;
+    display: flex;
+    border-bottom: 2px solid black;
+    justify-content: space-evenly;
+}
+.navlogo
+{   float: left;
+    width: 130px;
+    height: 80px;
+    border: 0;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+.logo{
+    background-size: cover;
+    float: left;
+    width: 145px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+}
+.srm
+{
+    float: left;
+    width: 130px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+.navtitle
+{
+
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 25px;
+}
+.navtext
+{
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    width: 475px;
+    height: 70px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.srm2
+{
+    float: right;
+    width: 130px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+.navlogo2{
+    background-size: cover;
+    float: right;
+    width: 130px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    margin-top: 9px;
+    margin-left: 22.5%;
+}
+.panel{
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.options
+{
+    justify-content: space-evenly;
+    display: flex;
+}
+.but
+{
+    background-color: rgb(255, 255, 255,.8);
+    height: 70px;
+    width: 150px;
+    font-size: 1.3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    border: none;
+    transition: transform 450ms;
+    color: black;
+}
+.logout
+{
+    background-color: rgb(255, 255, 255,.8);
+    height: 70px;
+    width: 150px;
+    font-size: 1.3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    border: none;
+    transition: transform 450ms;
+    color: black;
+}
+.logout:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+    transform: scale(1.08);
+    border: 2px solid black;
+}
+.lik
+{
+    color: black;
+    text-decoration: none;
+}
+.but:hover{
+    transform: scale(1.08);
+    background-color: rgba(173, 216, 230, 0.5);
+    border: 2px solid black;
+    color: white;
+}
+.lik:hover
+{
+    color: white;
+    text-decoration: underline;
+}
+.details1
+{
+    font-size: 1.3rem;
+    padding-left: 15px;
+    text-align: justify;
+    padding-right: 15px;
+}
+.intro
+{
+    font-size: 1.3rem;
+  
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.qns
+{
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 1.2rem;
+    user-select: none;
+}
+.qns1
+{
+    padding-left: 30px;
+    font-size: 1rem;
+}
+.opts{
+    padding-left: 30px;
+    font-size: 1.3rem;
+}
+.butsub
+{
+    margin-left: 15px;
+    margin-bottom: 25px;
+    background-color: white;
+    height: 45px;
+    width: 110px;
+    font-size: 1.3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    border: none;
+    transition: transform 450ms;
+    font-size: .9rem;
+}
+.butsub1
+{
+    margin-left: 15px;
+    margin-bottom: 25px;
+    background-color: rgba(1, 1, 1, .8);
+    height: 45px;
+    width: 110px;
+    color: white;
+    font-size: 1.3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    border: none;
+    transition: transform 450ms;
+    font-size: .9rem;
+    display: none;
+}
+#answ
+{
+    padding-left: 15px;
+    margin-top: 10px;
+    display:block;
+    font-size: 1.2rem;
+}
+.butsub1:hover{
+    transform: scale(1.08);
+    background-color: rgba(173, 216, 230, 0.5);
+    border: 2px solid black;
+    color: black;
+}
+.butsub:hover{
+    transform: scale(1.08);
+    background-color: rgba(173, 216, 230, 0.5);
+    border: 2px solid black;
+}
+.butres
+{
+    margin-left: 15px;
+    margin-bottom: 25px;
+    background-color: rgba(255, 0, 0, .8);
+    height: 45px;
+    width: 110px;
+    font-size: 1.3rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    border: none;
+    transition: transform 450ms;
+    font-size: .9rem;
+}
+.butres:hover{
+    transform: scale(1.08);
+    background-color: white;
+    border: 2px solid black;
+}
+.refol1
+{
+    font-size: 1.2rem;
+}
+.correctanswer
+{
+    color: green;
+    display: none;
+}
+.incorrectanswer
+{
+    color:red;
+    display: none;
+}
+/* modified */
+.section
+{
+    margin-top: 50px;
+    height: fit-content;
+    align-items: center;
+    padding-left: 65px;
+    padding-right: 65px;
+    justify-content: center;
+}
+.box
+{
+    background-color: rgb(255, 255, 255,.5);
+    color: black;
+    height: fit-content;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+/*new code*/
+.theorysection
+{
+    margin-top: 50px;
+    height: 1150px;
+    align-items: center;
+    padding-left: 65px;
+    padding-right: 65px;
+    justify-content: center;
+}
+.theorybox
+{
+    background-color: rgb(255, 255, 255,.5);
+    color: black;
+    height: 1100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+.exp2theorypng{
+    position:relative;
+    left:95px;
+    width:650px;
+    display: block;
+    place-items: center;
+
+}
+.prelabsection
+{
+    margin-top: 50px;
+    height: 850px;
+    align-items: center;
+    padding-left: 65px;
+    padding-right: 65px;
+    justify-content: center;
+}
+.prelabbox
+{
+    background-color: rgb(255, 255, 255,.5);
+    color: black;
+    height: 800px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+.exp3theorypng{
+    position:relative;
+    left:95px;
+    width:850px;
+
+}
+.theorysection3
+{
+    margin-top: 50px;
+    height: fit-content;
+    align-items: center;
+    padding-left: 65px;
+    padding-right: 65px;
+    justify-content: center;
+}
+.theorybox3
+{
+    background-color: rgb(255, 255, 255,.5);
+    color: black;
+    height: fit-content;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+.prelabsection3
+{
+    margin-top: 50px;
+    height: 950px;
+    align-items: center;
+    padding-left: 65px;
+    padding-right: 65px;
+    justify-content: center;
+}
+.prelabbox3
+{
+    background-color: rgb(255, 255, 255,.5);
+    color: black;
+    height: 900px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}

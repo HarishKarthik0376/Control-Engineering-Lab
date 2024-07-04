@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Completed Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .thankyou
+        {   position: relative;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%,25%);
+            width: 400px;
+            height: 270px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .para1
+        {  position: relative;
+            top: 40px;
+            display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+           font-size: 1.2rem;
+           color: green;
+           font-weight: 700;
+        }
+        .para2
+        {   position: relative;
+            top: 50px;
+            display: flex;
+            justify-content: center;
+           flex-wrap: wrap;
+           font-size: 1.1rem;
+           color: green;
+           font-weight: 600;
+        }
+        .section
+        {
+            position: relative;
+            top: 5%;
+            left: 35%;
+            transform: translate(-25%,0%);
+            width: 700px;
+            height: 450px;
+        
+        }
+        .box
+        {
+            height: 450px;
+            width: 700px;
+        }
+        .buttons
+        {
+            position: relative;
+            top: 20%;
+            display: flex;
+            gap: 10%;
+            left: 50%;
+            transform: translate(-40%,0%);
+            width: 300px;
+        }
+        .gohome
+        {
+            width: 110px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            border: 2px solid black;;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        .gohome:hover
+        {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+        .procedureview
+        {
+            width: 110px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            border: 2px solid black;;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+        .procedureview:hover
+        {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navlogo">
+                <div class="logo">
+                    <img class="srm" src="SRMIST.PNG" alt="logo">
+                </div>
+            </div>
+            <div class="navtitle"><p class="navtext"><b>Control Engineering Lab</b></p></div>
+            <div class="navlogo2">
+                <img style="text-align: right; height:230px; width:170px; position:absolute; top:-9%; right:1%;" class="srm2" src="hello! 1.png" alt="navlogo2">
+            </div>
+        </div>
+</header>
+<div class="notificationbox" id="notificationbox"></div>
+<div class="section">
+    <div class="box">
+        <p class="para1">Your Response Has Been Submited!!</p>
+        <p class="para2">Thank You For Taking The Test</p>
+        <Table class="thankyou" border="1">
+            <thead>
+                <th colspan="2">Total Score</th>
+            </thead>
+            <tbody>
+                <tr id="prelabtable">
+                    <td>Prelab Score</td>
+                </tr>
+                <tr id="simulationtable">
+                    <td>Simulation Score</td>
+                </tr>
+                <tr id="extraqnstable">
+                    <td>Extra Qns Score</td>
+                    <td>0/5</td>
+                </tr>
+                <tr id="postlbatable">
+                    <td>Postlab Score</td>
+                </tr>
+            </tbody>
+        </Table>
+        <div class="buttons">
+            <button class="gohome" id="gohome">Home Page</button>
+            <button class="procedureview" id="procedureview">Procedure</button>
+        </div>
+    </div>
+    <script src="thankyou.js"></script>
+</div>
+</body>
+</html>
